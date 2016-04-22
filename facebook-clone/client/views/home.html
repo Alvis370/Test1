@@ -11,8 +11,8 @@
 	</form>
 	{{#each statuses}}
 		<p>
-			<Id: {{timestamp}},
-			<a href="{{pathFor 'userProfile' username=getUsername}}">{{getUsername}}</a>: {{text}}    
+			Id: {{timestamp}},
+			<a href="{{pathFor 'userProfile' username=getUsername }}">{{getUsername}} </a>: {{text}}    
 		</p>
 	{{/each}}
 </template>
