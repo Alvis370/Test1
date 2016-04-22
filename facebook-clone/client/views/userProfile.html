@@ -1,0 +1,20 @@
+<template name="userProfile">
+	<h1>{{user.username}} profile</h1>
+	{{#if hasFriendRequest}}
+		<button class="btn btn-success confirm-friendship">Confirm Friendship</button>
+		<button class="btn btn-danger cancel-friendship">Cancel Friendship Request</button>
+	{{else}}
+		<button class="btn btn-primary add-friend">Add Friend</button>
+	{{/if}}
+
+	<h3>Friend List of {{user.username}}:</h3>
+	{{#each friends}}
+		<p>
+			<a href="{{pathFor 'userProfile' username=user.username}}">
+				{{user.username}}
+			</a>
+		</p>
+	{{else}}
+		<p>Currently you have 0 friend.</p>
+	{{/each}}
+</template>

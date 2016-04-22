@@ -1,0 +1,18 @@
+<template name="home">
+	Homepage
+	<form id="insert-status">
+		<p>
+			<textarea class="form-control" placeholder="Write something here..." name="text"></textarea>
+		</p>
+
+		<p>
+			<input type="submit" value="Submit" class="btn btn-default">
+		</p>
+	</form>
+	{{#each statuses}}
+		<p>
+			<Id: {{timestamp}},
+			<a href="{{pathFor 'userProfile' username=getUsername}}">{{getUsername}}</a>: {{text}}    
+		</p>
+	{{/each}}
+</template>

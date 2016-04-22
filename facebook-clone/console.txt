@@ -1,0 +1,12 @@
+meteor add accounts-ui
+meteor add accounts-password
+
+meteor add sergeyt:typeahead
+meteor add twbs:bootstrap
+meteor add iron:router
+meteor add aldeed:collection2
+meteor add socialize:friendships
+
+meteor add aldeed:autoform
+
+Meteor add ogamedia:timer
