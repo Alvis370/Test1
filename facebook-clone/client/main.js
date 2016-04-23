@@ -9,6 +9,6 @@ Accounts.ui.config({
 Template.categories.helpers({
     categories: ["Construction", "Manufacturing", "Wholesale", 
     "Retail Sales", "Finance", "Insurance", "Real Estate", "Health Care",
-     "Education", "Government", "Other"]
+     "Education", "Government", "Others"]
 });
 
