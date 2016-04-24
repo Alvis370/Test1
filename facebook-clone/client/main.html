@@ -3,11 +3,11 @@
 </head>
 
 <body>
-    <p>
+    <div class="container">
       <select class="form-control" id="category">
         {{> categories}}
       </select>
-    </p>
+    </div>
 </body>
 
 <template name="layout">
@@ -25,10 +25,9 @@
   </div>
 </template>
 
-<template name="categories">
+<template name="categories">  
   <option disabled="disabled" selected="selected">Please Select</option> 
     {{#each categories}}
-      <option value="{{this}}">{{this}}</option>
+      <option value="cate">{{cate}}</option>
     {{/each}}
 </template>
-
