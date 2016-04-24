@@ -1,6 +1,7 @@
 import { Mongo } from 'meteor/mongo';
 
 export const UserFriends = new Mongo.Collection('userFriends');
+Categories = new Mongo.Collection('categories');
 
 var Schemas = {};
 Schemas.UserFriends = new SimpleSchema({
